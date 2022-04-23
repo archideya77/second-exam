@@ -1,0 +1,91 @@
+.site-foot{
+    .line-img{
+        width: 1200px;
+    }
+    .foot-menu{
+        padding-top: 35px;
+        padding-bottom: 45px;
+    @include reset-display;
+    justify-content: space-between
+    }
+    &__list{
+        @include reset-display;
+    }
+    &__link{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 36px;
+        color: $subtitle-color;
+        margin-right: 20px;
+    }
+    .item{
+        color: $subtitle-color;
+        list-style-type: disc;
+    }
+}
+
+@media screen and(max-width:992px) {
+        .site-foot{
+            &__list{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            padding-left: 20px;
+            .line-img{
+                width: 900px;
+            }
+        }
+}
+@media screen and(max-width:767px) {
+        .site-foot{
+            &__link{
+                font-size: 16px;
+                line-height: 24px;
+            }
+            &__item{
+                padding-left: 0;
+            }
+            padding-left: 20px;
+            .line-img{
+                width: 690px;
+            }
+        }
+}
+@media screen and(max-width:575px) {
+        .site-foot{
+            &__list{
+                max-width: 550px;
+            }
+            &__link{
+                font-size: 13px;
+                line-height: 18px;
+            }
+            .line-img{
+                width: 490px;
+            }
+        }
+}
+
+@media screen and(max-width:320px) {
+        .site-foot{
+            .img-sec{
+                margin-bottom: 20px;
+            }
+            .foot-menu{
+                flex-direction: column;
+            }
+            &__list{
+                max-width: 290px;
+            }
+            &__link{
+                font-size: 11px;
+                line-height: 18px;
+                margin-right: 8px;
+            }
+            .line-img{
+                width: 290px;
+                margin-top: 55px;
+            }
+        }
+}

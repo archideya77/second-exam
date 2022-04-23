@@ -1,0 +1,125 @@
+.contact{
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    &-bottom{
+        @include reset-display;
+    }
+    .form{
+        input{
+            padding: 26px 300px 30px 33px;
+            border: 1px solid #8F95A5;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+    }
+    .active-sub{
+        margin-top: 32px;
+        margin-bottom: 52px;
+    }
+}
+
+@media screen and(max-width:992px) {
+    .contact{
+        padding-top: 90px;
+        .left-section{
+            img{
+                width: 310px;
+                height: 280px;
+                margin-left: 40px;
+            }
+        }
+        .text-box{
+            padding: 0 0;
+            .active-sub{
+                margin-top: 10px;
+                margin-bottom: 40px;
+            }
+            .contact-bottom{
+                .btn-res{
+                    padding: 18px 66px;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:767px) {
+    .contact{
+        padding-bottom: 10px;
+        .left-section{
+            img{
+                width: 230px;
+                height: 210px;
+                margin-left: 40px;
+            }
+        }
+        .text-box{
+            margin-left: 40px;
+            .active-sub{
+                margin-top: 10px;
+                margin-bottom: 40px;
+            }
+            .contact-bottom{
+                .btn-res{
+                    padding: 15px 40px;
+                    margin-left: 55px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:575px) {
+    .contact{
+        padding-top: 55px;
+        .left-section{
+            position: relative;
+            img{
+                width: 350px;
+                height: 320px;
+                position: absolute;
+                top: 150px;
+                left: 60px;
+            }
+        }
+        .text-box{
+            text-align: center;
+            .active-sub{
+                margin-top: 400px;
+            }
+            .contact-bottom{
+                .btn-res{
+                    padding: 15px 75px;
+                    margin-left: 95px;  
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:320px) {
+    .contact{
+        padding-right: 40px;
+        .left-section{
+            img{
+                width: 250px;
+                height: 250px;
+                margin-left: 0;
+            }
+        }
+        .text-box{
+            .contact-bottom_res{
+                flex-direction: column;
+            }
+            .active-sub{
+                margin-top: 350px;
+                margin-bottom: 10px;
+            }
+            .contact-bottom{
+                .btn-res{
+                    padding: 15px 90px;
+                    margin-left: 0;  
+                }
+            }
+        }
+    }
+}

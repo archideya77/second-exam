@@ -1,0 +1,124 @@
+.about{
+    @include reset-display;
+    justify-content: space-between;
+    padding-bottom: 200px;
+    &-text {
+        &__bottom{
+            max-width: 570px;
+            @include reset-display;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and(max-width:992px) {
+    .about{
+        padding-top: 10px;
+        padding-left: 30px;
+        .res-title{
+            margin: 0 0;
+        }
+        &-right{
+            img{
+                width: 380px;
+                height: 390px;
+            }
+        }
+        &-text {
+            &__bottom{
+                max-width: 400px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+@media screen and(max-width:767px) {
+    .about{
+        .text-box_res{
+        padding-left: 20px;
+        }
+        &-left-res__subtitle{
+            max-width: 300px;
+            margin-top: 0;
+        }
+        padding-left: 0;
+        &-right{
+            img{
+                width: 300px;
+                height: 400px;
+            }
+        }
+        &-text {
+            &__bottom{
+                max-width: 350px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media screen and(max-width:575px) {
+    .about{
+        padding-bottom: 75px;
+        .text-box_res{
+            padding-left: 50px;
+        }
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        &-left-res__subtitle{
+            max-width: 480px;
+        }
+        padding-left: 0;
+        &-right{
+            img{
+                width: 360px;
+                height: 360px;
+                position: absolute;
+                top: 270px;
+                right: 60px;
+            }
+        }
+        &-text {
+            &__bottom{
+                max-width: 400px;
+                margin-left:60px;
+                margin-top: 400px;
+            }
+        }
+    }
+}
+@media screen and(max-width:320px) {
+    .about{
+        padding-top: 590px;
+        &-left-res__subtitle{
+            max-width: 260px;
+            position: absolute;
+            top: 900px;
+            right: 17px;
+        }
+        &-right{
+            img{
+                width: 280px;
+                height: 280px;
+                top: 650px;
+                right: 0;
+            }
+        }
+        &-text {
+            &__bottom{
+                margin-top: 440px;
+                margin-right: 30px;
+                .text-box_res{
+                    padding-left: 0;
+                }
+            }
+
+        }
+        .about-foot{
+            flex-direction: column;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import "./container";
+@import "./fonts";
+@import "./general";
+@import "./mixin";
+@import "./normalize";
+@import "./variables";
+@import "./visually-hidden";
+@import "./blocks/all-blocks";
+
+body{
+    background-color: #fff;
+}
+

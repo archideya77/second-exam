@@ -1,0 +1,133 @@
+.site-head{
+    width: 100%;
+    .site-nav{
+        padding-top: 55px;
+        @include reset-display;
+        justify-content: space-between;
+        &__list{
+            width: 500px;
+            padding-left: 0;
+            @include reset-display;
+            justify-content: space-between;
+        }
+        &__link{
+            font-family: "Poppins",sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: $link-color-bg;
+        }
+        .btn{
+            font-weight: 400;
+            font-size: 20px;
+            border: 2px solid $link-color-bg;
+            border-radius: 5px;
+            padding: 17px 57px;
+            color: $title-color;
+            margin-left: 40px;
+        }
+        .bars,.fa-times{
+            color: $link-color-bg;
+            display: none;
+        }
+    }
+}
+
+@media screen and(max-width:992px) {
+    .site-head{
+        .site-nav{
+            padding-top: 44px;
+            &__link{
+                font-size: 18px;
+                line-height: 24px;
+            }
+            img{
+                width: 89px;
+                height: 45px;
+                margin-left: 10px;
+            }
+            .btn{
+                line-height: 25px;
+                font-size: 17px;
+                padding: 10px 37px;
+            }
+        }
+    }
+}
+@media screen and(max-width:767px) {
+    .site-head{
+        .site-nav{
+            padding-top: 39px;
+            img{
+                width: 89px;
+                height: 45px;
+                margin-left: 15px;
+            }
+            &__link{
+                display: none;
+            }
+            .btn{
+                line-height: 27px;
+                font-size: 18px;
+                padding: 12px 40px;
+            }
+            
+            .chec{
+                @include reset-display;
+                .fa-times,.bars{
+                    display: block;
+                }
+                input:checked ~ .bars{
+                    display: none;
+                    .site-nav__item{
+                        display: block;
+                    }
+                }
+                .fa-times{
+                    display: none;
+                }
+                input:checked ~ .fa-times{
+                    display: inline;
+                    visibility: visible;
+                }
+                .bars{
+                    width: 32px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width:575px) {
+    .site-head{
+        .site-nav{
+            .logo{
+                margin-left: 25px;
+            }
+                .bars{
+                    right: 40px;
+                    width: 42px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+@media screen and(max-width:320px) {
+    .site-head{
+        .site-nav{
+            img{
+                width: 71px;
+                height: 36px;
+            }
+            &__title{
+                font-size: 24px;
+                line-height: 36px;
+            }
+                .bars{
+                    width: 33px;
+                    height: 20px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
